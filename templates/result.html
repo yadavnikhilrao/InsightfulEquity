@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>InsightfulEquity - Market Outlook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Unlocking Financial Insights for a Prosperous Tomorrow">
+    <meta name="author" content="Nikhil Yadav">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Load Font Awesome CSS from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../static/assets/img/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <!-- Plugin Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/vendors.css">
+
+    <!-- App Style -->
+    <link href="../static/assets/css/style.css" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" type="image/x-icon" href="../static/assets/img/favicon.ico">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- CSS here -->
+        <link rel="stylesheet" href="../static/assets/css/animate.min.css">
+        <link rel="stylesheet" href="../static/assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="../static/assets/css/flaticon.css">
+        <link rel="stylesheet" href="../static/assets/css/slick.css">
+        <link rel="stylesheet" href="../static/assets/css/default.css">
+        <link rel="stylesheet" href="../static/assets/css/style1.css">
+        <link rel="stylesheet" href="../static/assets/css/responsive.css">
+
+
+</head>
+
+<body class="light-sidebar sidebar-mini">
+    
+    <!-- Begin App -->
+    <div class="app">
+        <!-- Begin App Wrap -->
+        <div class="app-wrap">
+            <!-- Begin Pre-loader -->
+            <div class="loader" style="display: none;">
+                <div class="h-100 d-flex justify-content-center">
+                    <div class="align-self-center">
+                        <img src="../static/assets/img/loader/loader.svg" alt="loader">
+                    </div>
+                </div>
+            </div>
+            <!-- End Pre-loader -->
+            
+            <!-- App Header -->
+            <header class="app-header top-bar">
+                <nav class="navbar navbar-expand-md">
+
+
+                    <!-- Navbar Header -->
+                    <div class="navbar-header d-flex align-items-center">
+                        <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
+                        <a class="navbar-brand" href="/">
+                            <img src="../static/assets/img/logo-light.png" class="img-fluid logo-desktop" alt="logo">
+                            <img src="../static/assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo">
+                        </a>
+                    </div>
+                    <!-- End Navbar Header -->
+
+                    <!-- Navigation -->
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+                        <div class="navigation d-flex">
+                            <ul class="navbar-nav nav-left">
+                                <li class="nav-item">
+                                    <a href="javascript:void(0)" class="nav-link sidebar-toggle">
+                                        <i class="ti ti-align-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Navigation -->
+                </nav>
+            </header>
+            <!-- End App Header -->
+
+            <!-- Begin App Container -->
+            <div class="app-container">
+
+                <!-- Begin App Navbar -->
+                <aside class="app-navbar">
+                    <!-- Begin Sidebar Nav -->
+                    <div class="sidebar-nav scrollbar scroll_dark mCustomScrollbar _mCS_3 mCS-autoHide _mCS_1 mCS_no_scrollbar" style="position: relative; overflow: visible;">
+                        <div id="mCSB_3" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0" style="max-height: none;">
+                            <div id="mCSB_3_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                                <ul class="metismenu" id="sidebarNav">
+
+                                    <li><a href="/" aria-expanded="false"><i class="nav-icon ti ti-home"></i><span class="nav-title">Home</span></a></li>
+                                    <li><a href="/stock-predictions" aria-expanded="false"><i class="nav-icon ti ti-pulse"></i><span class="nav-title">Stock Predictions</span></a></li>
+                                    <li><a href="/coinvert" aria-expanded="false"><i class="nav-icon fa fa-exchange"></i><span class="nav-title">Coinvert</span><span class="nav-label label label-success">New</span></a></li>
+                                    <li><a href="/about" aria-expanded="false"><i class="fas fa-users"></i><span class="nav-title">About Us</span></a></li>
+                                    <li><a href="/contact" aria-expanded="false"><i class="fas fa-phone"></i><span class="nav-title">Contact Us</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Sidebar Nav -->
+                </aside>
+                <!-- End App Navbar -->
+
+                <!-- Begin App Main -->
+                <div class="app-main" id="main">
+                    <!-- Begin Container Fluid -->
+                    <div class="container-fluid">
+                        
+
+
+<!-- ---------------------------------------------------------------------------------- -->
+
+
+
+
+
+                        <div class="row">
+                            <div class="col-xxl-7 m-b-30">
+                                <div class="card card-statistics h-100 mb-0 apexchart-tool-force-top">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Today's {{quote}} Stock Data</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6 col-lg-3">
+                                                <div class="row mb-2 pb-3 align-items-end">
+                                                    <div class="col">
+                                                        <p>OPEN</p>
+                                                        <h3 class="tex-dark mb-0">{{open_s}}</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-lg-3">
+                                                <div class="row mb-2 pb-3 align-items-end">
+                                                    <div class="col">
+                                                        <p>HIGH</p>
+                                                        <h3 class="tex-dark mb-0">{{high_s}}</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-lg-3">
+                                                <div class="row mb-2 pb-3 align-items-end">
+                                                    <div class="col">
+                                                        <p>LOW</p>
+                                                        <h3 class="tex-dark mb-0">{{low_s}}</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-lg-3">
+                                                <div class="row mb-2 pb-3 align-items-end">
+                                                    <div class="col">
+                                                        <p>CLOSE</p>
+                                                        <h3 class="tex-dark mb-0">{{close_s}}</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-lg-3">
+                                                <div class="row mb-2 pb-3 align-items-end">
+                                                    <div class="col">
+                                                        <p>ADJ CLOSE</p>
+                                                        <h3 class="tex-dark mb-0">{{adj_close}}</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-lg-3">
+                                                <div class="row mb-2 pb-3 align-items-end">
+                                                    <div class="col">
+                                                        <p>VOLUME</p>
+                                                        <h3 class="tex-dark mb-0">{{vol}}</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 px-0">
+                                                <div class="apexchart-wrapper p-inherit" style="position: relative;">
+                                                    <!-- Your chart content goes here -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-xl-6 col-xxl-4 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Recent Trends in {{quote}} Stock Prices</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Keep the image -->
+                                        <div style="display: flex; justify-content: center; align-items: center;">
+                                            <img class="img-fluid" src="{{url_for('static', filename='Trends.png')}}" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-xxl-4 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header">
+                                        <h4 class="card-title">ARIMA Model Accuracy</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Keep the image -->
+                                        <div style="display: flex; justify-content: center; align-items: center;">
+                                            <img class="img-fluid" src="{{url_for('static', filename='ARIMA.png')}}" alt="Image" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-xxl-4 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header">
+                                        <h4 class="card-title">LSTM Model Accuracy</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Keep the image -->
+                                        <div style="display: flex; justify-content: center; align-items: center;">
+                                            <img class="img-fluid" src="{{url_for('static', filename='LSTM.png')}}" alt="Image" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-xxl-4 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Linear Regression Model Accuracy</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Keep the image -->
+                                        <div style="display: flex; justify-content: center; align-items: center;">
+                                            <img class="img-fluid" src="{{url_for('static', filename='LR.png')}}" alt="Image" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xxl-6 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Revenue overview</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Tomorrow's {{quote}} Closing Price</h4>
+                                        <div class="row">
+                                            <div class="col-12 col-xs-3">
+                                                <span>BY ARIMA: <b>{{arima_pred}}</b></span>
+                                                <div class="progress my-3" style="height: 4px;">
+                                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-xs-3">
+                                                <span>BY LSTM: <b>{{lstm_pred}}</b></span>
+                                                <div class="progress my-3" style="height: 4px;">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-xs-3">
+                                                <span>BY LINEAR REGRESSION: <b>{{lr_pred}}</b></span>
+                                                <div class="progress my-3" style="height: 4px;">
+                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Model Evaluation</h4>
+                                        <!-- Add your content for Income by department here -->
+                                        <div class="row">
+                                            <div class="col-12 col-xs-3">
+                                                <span>ARIMA RMSE: <b>{{error_arima}}</b></span>
+                                            </div>
+                                            <div class="col-12 col-xs-3">
+                                                <span>LSTM RMSE: <b>{{error_lstm}}</b></span>
+                                            </div>
+                                            <div class="col-12 col-xs-3">
+                                                <span>LINEAR REGRESSION RMSE: <b>{{error_lr}}</b></span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xxl-8 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header d-flex align-items-center justify-content-between">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Recent News About {{quote}}</h4>
+                                        </div>
+                                        <!-- <div class="dropdown">
+                                            <a class="btn c-btn" href="#!">Export <i class="zmdi zmdi-download pl-1"></i> </a>
+                                        </div> -->
+                                    </div>
+                                    <div class="card-body">
+                                        <p>{% for i in range(0,12) %}
+                                          {{news_list[i]}}<br>
+                                          {% endfor %}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-6 col-xxl-4 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Sentiment Analysis For {{quote}} News</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Keep the image -->
+                                        <div style="display: flex; justify-content: center; align-items: center;">
+                                            <img class="img-fluid" src="{{ url_for('static', filename='SA.png') }}" alt="Sentiment Analysis">
+
+                                        </div>
+
+                                        <h4 class="m-b-10 m-t-20">Market Sentiment Analysis</h4>
+                                        <p>Conducting sentiment analysis for {{quote}} news provides valuable insights into the public's perception, guiding informed decisions in the financial realm.</p>
+                            
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-xxl-4">
+                                <div class="card card-statistics">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Predicted {{quote}} Close Price For The Next 7 Days</h4>
+                                    </div>
+                                    <div class="card-body pb-2">
+                                        <div class="row no-gutters">
+                                            <!-- Keep the list -->
+                                            <div class="col-sm-4 mt-3">
+                                                <ul class="list-group list-group-flush">
+                                                  
+                                                  {% for row in forecast_set %}
+                                                    <li class="list-group-item d-flex px-0 justify-content-between align-items-center">
+                                                        <p class="text-muted m-b-0">
+                                                            <i class="fa fa-circle-o mr-2 text-danger"></i>
+                                                        </p>
+                                                        <p class="text-danger mb-0">{{ row[0]|round(2) }}</p>
+                                                    </li>
+                                                    {% endfor %}
+
+
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <!-- Keep the image -->
+                                                <div style="display: flex; justify-content: center; align-items: center;">
+                                                    <img src="../static/assets/img/fore.png" alt="Lifetime Sales Image" style="max-width: 100%; height: auto;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-statistics bg-gradient">
+                                    <div class="card-header d-flex justify-content-between border-0 pb-0">
+                                        <div class="card-heading">
+                                            <h4 class="card-title text-white">RECOMMENDATION</h4><br>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        
+                                        <p class="text-white">Based on our advanced machine learning forecasts and in-depth sentiment analysis of financial news, we anticipate a potential {{idea}} situation in {{quote}} stock, In that case, you're inclined to :</p><br>
+                                        <h2 class="text-white mb-0">{{decision}}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                
+            
+        
+<!-- ---------------------------------------------------------------------------------- -->
+
+
+
+
+
+                        <!-- end app-main -->
+                    </div>
+
+                    <!-- end app-container -->
+
+                    <!-- begin footer -->
+                    <footer class="footer">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 text-center text-sm-left">
+                               <p>© Copyright 2023. All rights reserved.</p>
+                            </div>
+                            <div class="col  col-sm-6 ml-sm-auto text-center text-sm-right">
+                                <p>Made with <i class="fa fa-heart text-danger mx-1"></i> by<a href="https://yadavnikhilrao.github.io/portfolio"> Nikhil Yadav</a></p>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- end footer -->
+
+                </div>
+                <!-- end app-wrap -->
+            </div>
+            <!-- end app -->
+        </div>
+        <!-- End Pre-loader -->
+
+        
+        <!-- plugins -->
+        <script src="../static/assets/js/vendors.js"></script>
+
+        <!-- Begin Vendor Js -->
+        <script src="../static/assets/vendors/js/core.min.js"></script>
+        <script src="../static/assets/vendors/js/app.min.js"></script>
+        <script src="../static/assets/vendors/js/misc.js"></script>
+        <script src="../static/assets/js/chart.min.js"></script>
+        <script src="../static/assets/vendors/js/dashboard.js"></script>
+        <script src="../static/assets/js/dashboard1.js"></script>
+        <!-- End Vendor Js -->
+
+        <!-- Begin Page Vendor Js -->
+        <script src="../static/assets/vendors/js/datatables.min.js"></script>
+        <script src="../static/assets/vendors/js/syntaxhighlighter/shCore.js"></script>
+        <script src="../static/assets/vendors/js/syntaxhighlighter/shBrushJScript.js"></script>
+        <!-- End Page Vendor Js -->
+
+        <!-- Begin Page Snippets -->
+        <script src="../static/assets/js/main.js"></script>
+        <!-- End Page Snippets -->
+
+        <!-- Custom scripts -->
+        <script src="../static/assets/js/app.js"></script>
+
+
+
+        <!-- JS here -->
+        <script src="../static/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="../static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="../static/assets/js/popper.min.js"></script>
+        <script src="../static/assets/js/bootstrap.min.js"></script>
+        <script src="../static/assets/js/isotope.pkgd.min.js"></script>
+        <script src="../static/assets/js/slick.min.js"></script>
+        <script src="../static/assets/js/jquery.meanmenu.min.js"></script>
+        <script src="../static/assets/js/ajax-form.js"></script>
+        <script src="../static/assets/js/wow.min.js"></script>
+        <script src="../static/assets/js/jquery.scrollUp.min.js"></script>
+        <script src="../static/assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="../static/assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="../static/assets/js/circle-progress.min.js"></script>
+        <script src="../static/assets/js/jquery.counterup.min.js"></script>
+        <script src="../static/assets/js/jquery.waypoints.min.js"></script>
+        <script src="../static/assets/js/tilt.jquery.min.js"></script>
+        <script src="../static/assets/js/plugins.js"></script>
+        <script src="../static/assets/js/main.js"></script>
+
+
+
+    </div>
+</body>
+</html>
