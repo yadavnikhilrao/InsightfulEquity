@@ -32,12 +32,10 @@ Join us on this exciting journey, and let's decode the market together. 📈
 #Finance #DataAnalysis #InvestmentInsights #OpenSource
 
 ---
-
-![Home Page](./static/insightfulequity.jpeg)
-*Home*
-
+**Stock Predictions:**
 ![Stock Predictions](./static/stock-predictions.jpeg)
-*Stock Predictions*
 
+
+**Result:**
 ![Result](./static/result.jpeg)
-*Result*
+
