@@ -33,11 +33,11 @@ Join us on this exciting journey, and let's decode the market together. 📈
 
 ---
 
-![Screenshot - Home](home_screenshot.png)
+![Home Page](./static/assets/img/insightfulequity.jpeg)
 *Home*
 
-![Screenshot - Stock Predictions](stock_predictions_screenshot.png)
+![Stock Predictions](./static/assets/img/stock-predictions.jpeg)
 *Stock Predictions*
 
-![Screenshot - Coinvert](coinvert_screenshot.png)
-*Coinvert*
+![Result](./static/assets/img/result.jpeg)
+*Result*
